@@ -1,0 +1,21 @@
+# Created by https://www.gitignore.io
+
+### Clojure ###
+pom.xml
+pom.xml.asc
+*jar
+/lib/
+/classes/
+/target/
+/checkouts/
+.lein-deps-sum
+.lein-repl-history
+.lein-plugins/
+.lein-failures
+
+
+### Intellij ###
+# Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm
+
+/*.iml
+/.idea

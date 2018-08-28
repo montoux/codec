@@ -1,4 +1,4 @@
-(defproject montoux/codec "1.0.0"
+(defproject montoux/codec "1.0.1-SNAPSHOT"
   :description "Tools for converting between different unicode encodings in ClojureScript."
   :url "http://github.com/montoux/codec"
   :license {:name "Eclipse Public License"

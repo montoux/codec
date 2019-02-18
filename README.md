@@ -1,5 +1,8 @@
 # Montoux Codec
 
+[![Clojars Project](https://img.shields.io/clojars/v/montoux/codec.svg)](https://clojars.org/montoux/codec)
+[![Dependencies Status](https://versions.deps.co/montoux/codec/status.svg)](https://versions.deps.co/montoux/codec)
+
 A ClojureScript library for performing stream conversations using a transducer-like API, with full UTF-8/UTF-16 support.
 
 This library fully supports the UTF-8 specification including 3 & 4 byte code points. It includes exhaustive tests
@@ -12,6 +15,8 @@ tools for converting between different Unicode code point encodings including UT
 Base16/Base64, and EDN. 
 
 ```clojure
+(require '[montoux.codec.core :as codec])
+
 ;; UTF-16 to UTF-8 in base64
 (codec/encode-string "J̲o̲s̲é̲" codec/base64) ;; => "Ssyyb8yyc8yyw6nMsg=="
 (codec/decode-string "Ssyyb8yyc8yyw6nMsg==" codec/base64) ;; => "J̲o̲s̲é̲"
@@ -39,7 +44,7 @@ the United States and Asia, as well as Australia and New Zealand.
 
 ## License
 
-Copyright © 2018 [Montoux Limited](https://montoux.com)
+Copyright © 2019 [Montoux Limited](https://montoux.com)
 
 The use and distribution terms for this software are covered by the Eclipse Public License 1.0.
 By using this software in any fashion, you are agreeing to be bound by the terms of this license.
